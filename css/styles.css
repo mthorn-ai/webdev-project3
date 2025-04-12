@@ -1,0 +1,187 @@
+.barriecito-regular {
+  font-family: "Barriecito", Arial, system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.zain-regular {
+  font-family: "Zain", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#main-nav {
+  float: left;
+  width: 100%;
+  background-color: #333;
+}
+
+#main-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: left;
+  position: relative;
+  left:50%;
+}
+
+#main-nav ul li {
+  float: left;
+  position: relative;
+  right: 50%;
+  list-style: none;
+  font-family: "Barriecito", Arial, system-ui;
+}
+
+#main-nav ul li a {
+  padding: 20px 50px;
+  display: block;
+  text-decoration: none;
+  color: #ccc;
+}
+
+#main-nav ul li a:hover {
+  background-color: #ccc;
+  color: #333;
+}
+
+ul li {
+  list-style: square;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: underline;
+}
+
+h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+h4 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+#background {
+  background-color: cadetblue;
+}
+
+/* for resume.html */
+#contact-info {
+  font-size: small;
+}
+
+#resume-container {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+#resume-title{
+  font-size: x-large;
+  font-weight: bold;
+}
+
+#resume-name {
+  font-size: large;
+}
+
+.experience {
+  padding: 0.5%;
+}
+
+.links a:visited {
+  color: darkmagenta;
+}
+
+.links a:link {
+  color: maroon;
+}
+
+/* for about-me.html */
+#fluid-page {
+  width: 100%;
+  height: 100%;
+}
+
+.parent-2col { 
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-gap: 2rem; 
+  width: 100%;
+}
+
+.child { 
+  margin: 1rem; 
+  padding: 0;
+}
+
+#parent-4col { 
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-gap: 2rem; 
+  width: 100%;
+} 
+
+#abt-me-title {
+  padding-top: 5rem;
+  margin-left: 2%;
+  font-family: "Barriecito", Arial, system-ui;
+  font-size: large;
+}
+
+#abt-me-subtitle p{
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: "Zain", Arial, sans-serif;
+  font-size: large;
+  padding-bottom: 1rem;
+}
+
+
+/* for index.html */
+#fixed-page{
+  width: 1500px;
+  height: 1000px
+}
+
+.gif-align {
+  float: left;
+  padding: 5rem;
+}
+
+#gif-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+#home-p-container {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#home-header {
+  font-size: larger;
+  padding-top: 5rem;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+
+
+
+
+
+
+
+
+
