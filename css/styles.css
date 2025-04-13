@@ -86,10 +86,39 @@ h4 {
 }
 
 #right-container {
-  background-color: bisque;
+  background-color:lavender;
   border-radius: 20px;
   padding: 10px;
   flex: 1;
+}
+
+.left-sections {
+  margin-bottom: 4rem;
+}
+
+.sidebar {
+  width: 200px;
+  position: fixed;
+  background-color: burlywood;
+  right: 0;
+  height: 100%;
+}
+
+.sidebar li {
+  list-style: none;
+  padding-bottom: 2rem;
+}
+
+.sidebar a {
+  font-size: x-large;
+  list-style: none;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%; /* Take up full width on smaller screens */
+    /* Add other responsive changes */
+  }
 }
 
 #contact-info {
@@ -121,10 +150,12 @@ h4 {
 
 .links a:visited {
   color: darkmagenta;
+  padding: 1rem;
 }
 
 .links a:link {
   color: maroon;
+  padding: 1rem;
 }
 
 /* for about-me.html */
