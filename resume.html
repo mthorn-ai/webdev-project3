@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7d756a7d9a.js" crossorigin="anonymous"></script>
   </head>
 
   <body id="background">
@@ -19,83 +20,68 @@
         <li><a href="about-me.html">Things I like</a></li>
       </ul>
     </nav>
+    <div id="resume-title"><h1>Resume</h1></div>
     <div id="resume-container">
-      <div id="resume-title"><h1>Resume</h1></div>
-      <div id="resume-name"><h3>Matthew Thornton</h3></div>
-      <div id="contact-info">
-        <h4>email: thorntonm244@gmail.com</h4>
-        <div class="links"><h4><a href="https://github.com/mthorn-ai">GitHub Profile</a></h4></div>
-        <div class="links"><h4><a href="https://www.linkedin.com/in/matthew-thornton-955449305/">LinkedIn Profile</a></h4></div>
+      <div id="left-container">
+        <div id="resume-name"><h3>Matthew Thornton</h3></div>
+        <div id="contact-info">
+          <h4>email: thorntonm244@gmail.com</h4>
+          <div class="links"><h4>
+            <i class="fa-brands fa-github"></i>
+            <a href="https://github.com/mthorn-ai">GitHub Profile</a></h4>
+          </div>
+          <div class="links"><h4>
+            <i class="fa-brands fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/matthew-thornton-955449305/">LinkedIn Profile</a></h4>
+          </div>
+        </div>
+        <section>
+          <h2>Skills</h2>
+          <ul>
+            <li>Python</li>
+            <li>Java</li>
+            <li>R</li>
+            <li>SQL</li>
+            <li>Dart</li>
+            <li>Typescript</li>
+            <li>Javascript</li>
+            <li>Haskell</li>
+            <li>Racket</li>
+            <li>Git</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Education</h2>
+          <p><strong>Illinois Institute of Technology</strong></p>
+          <p>August 2020 - Present</p>
+          <p><em>Major: Computer Science</em></p>
+        </section>
       </div>
-      
-      <section>
-        <h2>Skills</h2>
-        <h4>General Technical Skills</h4>
-        <ul>
-          <li>Git</li>
-          <li>Mobile App Development</li>
-          <li>Object Oriented Programming</li>
-          <li>Functional Programming</li>
-          <li>Databases</li>
-          <li>Data structures</li>
-          <li>User Interface</li>
-          <li>React Native framework</li>
-          <li>Flutter framework</li>
-        </ul>
-        <h4>Programming Languages</h4>
-        <ul>
-          <li>Python</li>
-          <li>Java</li>
-          <li>R</li>
-          <li>SQL</li>
-          <li>Dart</li>
-          <li>Typescript</li>
-          <li>Javascript</li>
-          <li>Haskell</li>
-          <li>Racket</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Education</h2>
-        <p><strong>Illinois Institute of Technology</strong></p>
-        <p>August 2020 - Present</p>
-        <p><em>Major: Computer Science</em></p>
-        <h4>Relevant Courses</h4>
-        <ul>
-          <li>Software Engineering</li>
-          <li>Mobile App Development</li>
-          <li>Data Mining</li>
-          <li>Operating Systems</li>
-          <li>Programming Languages and Translators</li>
-          <li>Data Structures and Algorithms</li>
-          <li>Database Organization</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Professional Experience</h2>
-        <h4>Oak Lawn Community High School - <em>IT Student Intern</em></h4>
-        <p>August 2019 - May 2020</p>
-        <div class="experience">
-          <p>Offered a wide variety of services to students and staff which would range from troubleshooting and fixing the school iPads and computer to testing apps/devices for the school before letting the students use them. The school was named an “Apple Distinguished School” in my time here. Studied various customer service models to develop my own. Showed the new students how to set up their school iPads and taught them how to use the most important applications. </p>
-        </div>
-        <!-- I had to use the "resume-container" style element again because the padding stopped working at this point. I am not sure why.--> 
-        <h4>Palermo's 95th - <em>Pizza Chef</em></h4>
-        <p>January 2019 - August 2023</p>
-        <div class="experience">
-          <p>Maintained the high standards expected from a well respected restaurant during fast paced operations. Ensured the cleanliness and food-safety standards were up to par. Assisted management in efficiently preparing for events and/or special occasions. Took the initiative to find extra tasks or help others when my scheduled duties were completed. Made myself available for extra hours or shifts when needed. Prepared the requested food efficiently, accurately and of the highest quality for the customers. </p>
-        </div>
-      </section>
-      <section>
-        <h2>Projects</h2>
-        <div class="links"><h4><a href="https://github.com/mthorn-ai/nba_info_grabber">NBA Stats Grabber</a></h4></div>
-        <p>A program that scrapes the scores and statistics of an NBA game from an online database and displays them in an organized fashion. Utilizes a web scraper, HTML parser, and command line argument handling. All written in Python. Currently implementing more flags to accomplish more specific tasks, like displaying the advanced stats of a certain game on a certain day.</p>
-        <div class="links"><h4><a href="https://github.com/mthorn-ai/PayrollSystem">Payment Management System</a></h4></div>
-        <p>A makeshift payment management system, utilizing the PySimpleGUI library and a custom SQL database. Implements user login functionality and several SQL queries. After successfully logging in, the SQL queries are performed at the press of a button.</p>
-        <div class="links"><h4><a href="https://github.com/mthorn-ai/skatepark_app">Skatepark Themed Social Media App</a></h4></div>
-        <p>Worked in collaboration with a partner to build a mobile application equipped with a SQL database and login handling for the backend, and a sleek, interactive user interface with several functional screens that are easily accessible from the home screen. Both work in tandem to form a cohesive, semi-functional prototype of a social media-esque application.</p>
-      </section>
+      <div id="right-container">
+        <section>
+          <h2>Professional Experience</h2>
+          <h4>Oak Lawn Community High School - <em>IT Student Intern</em></h4>
+          <p>August 2019 - May 2020</p>
+          <div class="experience">
+            <p>Offered a wide variety of services to students and staff which would range from troubleshooting and fixing the school iPads and computer to testing apps/devices for the school before letting the students use them. The school was named an “Apple Distinguished School” in my time here. Studied various customer service models to develop my own. Showed the new students how to set up their school iPads and taught them how to use the most important applications. </p>
+          </div>
+          <!-- I had to use the "resume-container" style element again because the padding stopped working at this point. I am not sure why.--> 
+          <h4>Palermo's 95th - <em>Pizza Chef</em></h4>
+          <p>January 2019 - August 2023</p>
+          <div class="experience">
+            <p>Maintained the high standards expected from a well respected restaurant during fast paced operations. Ensured the cleanliness and food-safety standards were up to par. Assisted management in efficiently preparing for events and/or special occasions. Took the initiative to find extra tasks or help others when my scheduled duties were completed. Made myself available for extra hours or shifts when needed. Prepared the requested food efficiently, accurately and of the highest quality for the customers. </p>
+          </div>
+        </section>
+        <section>
+          <h2>Projects</h2>
+          <div class="links"><h4><a href="https://github.com/mthorn-ai/nba_info_grabber">NBA Stats Grabber</a></h4></div>
+          <p>A program that scrapes the scores and statistics of an NBA game from an online database and displays them in an organized fashion. Utilizes a web scraper, HTML parser, and command line argument handling. All written in Python. Currently implementing more flags to accomplish more specific tasks, like displaying the advanced stats of a certain game on a certain day.</p>
+          <div class="links"><h4><a href="https://github.com/mthorn-ai/PayrollSystem">Payment Management System</a></h4></div>
+          <p>A makeshift payment management system, utilizing the PySimpleGUI library and a custom SQL database. Implements user login functionality and several SQL queries. After successfully logging in, the SQL queries are performed at the press of a button.</p>
+          <div class="links"><h4><a href="https://github.com/mthorn-ai/skatepark_app">Skatepark Themed Social Media App</a></h4></div>
+          <p>Worked in collaboration with a partner to build a mobile application equipped with a SQL database and login handling for the backend, and a sleek, interactive user interface with several functional screens that are easily accessible from the home screen. Both work in tandem to form a cohesive, semi-functional prototype of a social media-esque application.</p>
+        </section>
+      </div>
     </div>
   </body>
 </html>

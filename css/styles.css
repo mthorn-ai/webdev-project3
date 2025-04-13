@@ -70,10 +70,28 @@ h4 {
 }
 
 #background {
-  background-color: cadetblue;
+  background-image: url('../assets/bg-image.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* for resume.html */
+#left-container {
+  background-color: aliceblue;
+  border-radius: 20px;
+  margin-right: 30px;
+  flex-direction: column;
+  flex: 1;
+  padding: 10px;
+}
+
+#right-container {
+  background-color: bisque;
+  border-radius: 20px;
+  padding: 10px;
+  flex: 1;
+}
+
 #contact-info {
   font-size: small;
 }
@@ -83,11 +101,14 @@ h4 {
   margin-right: 2rem;
   min-height: 100%;
   box-sizing: border-box;
+  padding: 15px;
+  display: flex;
 }
 
-#resume-title{
+#resume-title {
   font-size: x-large;
   font-weight: bold;
+  padding-top: 5rem;
 }
 
 #resume-name {
