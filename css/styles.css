@@ -188,11 +188,11 @@ h4 {
 }
 
 .grid-item-container {
-  background-color: aliceblue; /* Enable Flexbox for the container */
+  background-color: aliceblue; 
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center items horizontally */
-  align-items: center; /* Center items vertically */
+  justify-content: center; 
+  align-items: center; 
   border-radius: 20px;
   height: 100%;
   padding-bottom: 10px;
@@ -283,8 +283,6 @@ h4 {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* Always set the map height explicitly to define the size of the div
- * element that contains the map. */
 #map {
   height: 100%;
 }
