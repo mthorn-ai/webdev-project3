@@ -13,16 +13,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7d756a7d9a.js" crossorigin="anonymous"></script>
   </head>
   <body id="background">
+    <nav id="main-nav">
+      <ul>
+        <li><a href="index.html">Homepage</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="about-me.html">Things I like</a></li>
+      </ul>
+    </nav>
+    <button id="btn" onclick="changeBackground()">Change Background</button>
+    <script src="js/changeBackground.js"></script>
     <div id="fluid-page">
-      <nav id="main-nav">
-        <ul>
-          <li><a href="index.html">Homepage</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="about-me.html">Things I like</a></li>
-        </ul>
-      </nav>
       <div id="abt-me-title"><h1>Things I like</h1></div>
       <div id="abt-me-subtitle">
         <p>What follows is just a list of some of my favorite titles from different types of media. I highly recommend all of these things if you have not watched/listened to them :)</p>
@@ -39,29 +42,35 @@
           </ul>
         </nav>
       </aside>
-
       <script src="js/smoothJump.js"></script>
-      
       <div>
         <section id="movies">
           <h2>Movies</h2>
           <div class="parent-2col">
             <div class="child">
-              <h4>12 Angry Men (1957)</h4>
-              <img src="./assets/movies/12-angry-men.jpg" height=300 alt="A still from a scene from the movies 12 Angry Men in which 11 of the jurors look at Juror #3 who is not present in the image">
+              <div class="grid-item-container">
+                <h4>12 Angry Men (1957)</h4>
+                <img src="./assets/movies/12-angry-men.jpg" alt="A still from a scene from the movies 12 Angry Men in which 11 of the jurors look at Juror #3 who is not present in the image">
+              </div>
             </div>
             <div class="child">
-              <h4>Lord of the Rings trilogy</h4>
-              <img src="./assets/movies/lotr.jpg" height=300 alt="A still from Lord of the Rings: Fellowship of the Ring showcasing Aragorn, Gandalf, Legolas, Boromir, Samwise Gamgee, Frodo, Merry, and Pippin.">
+              <div class="grid-item-container">
+                <h4>Lord of the Rings trilogy</h4>
+                <img src="./assets/movies/lotr.jpg" height=337 alt="A still from Lord of the Rings: Fellowship of the Ring showcasing Aragorn, Gandalf, Legolas, Boromir, Samwise Gamgee, Frodo, Merry, and Pippin.">
+              </div>
               <p><em>Return of the King</em> is my favorite.</p>
             </div>
             <div class="child">
-              <h4>Spiderman: Into/Across the Spiderverse</h4>
-              <img src="./assets/movies/spiderman.jpg" alt="Miles Morales, Gwen, Peter Parker, Peter Porker, Peni Parker, and Spider Noir in their respective spider outfits sticking to the window of a skyscraper.">
+              <div class="grid-item-container">
+                <h4>Spiderman: Into/Across the Spiderverse</h4>
+                <img src="./assets/movies/spiderman.jpg" alt="Miles Morales, Gwen, Peter Parker, Peter Porker, Peni Parker, and Spider Noir in their respective spider outfits sticking to the window of a skyscraper.">
+              </div>
             </div>
             <div class="child">
-              <h4>Most Tarantino movies</h4>
-              <img src="./assets/movies/tarantino.jpg" alt="3 images in one depicting Pulp Fiction, Inglorious Basterds, and Reservoir Dogs from left to right.">
+              <div class="grid-item-container">
+                <h4>Most Tarantino movies</h4>
+                <img src="./assets/movies/tarantino.jpg" alt="3 images in one depicting Pulp Fiction, Inglorious Basterds, and Reservoir Dogs from left to right.">
+              </div>
               <p>Some of my favorites include Pulp Fiction, Reservoir Dogs, Kill Bill (1 and 2), and Inglorious Basterds</p>
             </div>
           </div>
@@ -72,44 +81,60 @@
           <p>Some of my favorite albums right now. This list will be outdated by next week.</p>
           <div id="parent-4col">
             <div class="child">
-              <h4>Magdalena Bay</h4>
-              <h4><em>Imaginal Disk</em></h4>
-              <img src="./assets/music/imaginal-disk.jpg" height= 250 alt="Album cover of Imaginal Disk by Magdalena Bay">
+              <div class="grid-item-container">
+                <h4>Magdalena Bay</h4>
+                <h4><em>Imaginal Disk</em></h4>
+                <img src="./assets/music/imaginal-disk.jpg" height= 250 alt="Album cover of Imaginal Disk by Magdalena Bay">
+              </div>
             </div>
             <div class="child">
-              <h4>Gojira</h4>
-              <h4><em>From Mars to Sirius</em></h4>
-              <img src="./assets/music/mars-to-sirius.jpg" height= 250 alt="Album cover of From Mars to Sirius by Gojira">
+              <div class="grid-item-container">
+                <h4>Gojira</h4>
+                <h4><em>From Mars to Sirius</em></h4>
+                <img src="./assets/music/mars-to-sirius.jpg" height= 250 alt="Album cover of From Mars to Sirius by Gojira">
+              </div>
             </div>
             <div class="child">
-              <h4>Denzel Curry</h4>
-              <h4><em>Melt My Eyez See Your Future</em></h4>
-              <img src="./assets/music/melt-my-eyez.jpg" height= 250 alt="Album cover of Melt My Eyez See Your Future by Denzel Curry">
+              <div class="grid-item-container">
+                <h4>Denzel Curry</h4>
+                <h4><em>Melt My Eyez See Your Future</em></h4>
+                <img src="./assets/music/melt-my-eyez.jpg" height= 250 alt="Album cover of Melt My Eyez See Your Future by Denzel Curry">
+              </div>
             </div>
             <div class="child">
-              <h4>Duster</h4>
-              <h4><em>Statosphere</em></h4>
-              <img src="./assets/music/stratosphere.jpg" height= 250 alt="Album cover of Stratosphere by Duster">
+              <div class="grid-item-container">
+                <h4>Duster</h4>
+                <h4><em>Statosphere</em></h4>
+                <img src="./assets/music/stratosphere.jpg" height= 250 alt="Album cover of Stratosphere by Duster">
+              </div>
             </div>
             <div class="child">
-              <h4>Agalloch</h4>
-              <h4><em>Ashes Against The Grain</em></h4>
-              <img src="./assets/music/ashes-against.jpg" height= 250 alt="Album cover of Stratosphere by Duster">
+              <div class="grid-item-container">
+                <h4>Agalloch</h4>
+                <h4><em>Ashes Against The Grain</em></h4>
+                <img src="./assets/music/ashes-against.jpg" height= 250 alt="Album cover of Stratosphere by Duster">
+              </div>
             </div>
             <div class="child">
-              <h4>The Dillinger Escape Plan</h4>
-              <h4><em>One Of Us Is The Killer</em></h4>
-              <img src="./assets/music/one-of-us.jpg" height= 250 alt="Album cover of Stratosphere by Duster">
+              <div class="grid-item-container">
+                <h4>The Dillinger Escape Plan</h4>
+                <h4><em>One Of Us Is The Killer</em></h4>
+                <img src="./assets/music/one-of-us.jpg" height= 250 alt="Album cover of Stratosphere by Duster">
+              </div>
             </div>
             <div class="child">
-              <h4>Massive Attack</h4>
-              <h4><em>Mezzanine</em></h4>
-              <img src="./assets/music/mezzanine.png" height= 250 alt="Album cover of Stratosphere by Duster">
+              <div class="grid-item-container">
+                <h4>Massive Attack</h4>
+                <h4><em>Mezzanine</em></h4>
+                <img src="./assets/music/mezzanine.png" height= 250 alt="Album cover of Stratosphere by Duster">
+              </div>
             </div>
             <div class="child">
-              <h4>Sweet Trip</h4>
-              <h4><em>Velocity : Design : Comfort</em></h4>
-              <img src="./assets/music/velocity.jpg" height= 250 alt="Album cover of Stratosphere by Duster">
+              <div class="grid-item-container">
+                <h4>Sweet Trip</h4>
+                <h4><em>Velocity : Design : Comfort</em></h4>
+                <img src="./assets/music/velocity.jpg" height= 250 alt="Album cover of Stratosphere by Duster">
+              </div>
             </div>
           </div>
         </section>
@@ -118,20 +143,28 @@
           <h2>TV Shows</h2>
           <div class="parent-2col">
             <div class="child">
-              <h4>Avatar: The Last Airbender</h4>
-              <img src="./assets/tv-shows/ATLA.jpg" alt="Cover image of Avatar: The Last Airbender showcasing Aang, Katara, and Sokka.">
+              <div class="grid-item-container">
+                <h4>Avatar: The Last Airbender</h4>
+                <img src="./assets/tv-shows/ATLA.jpg" alt="Cover image of Avatar: The Last Airbender showcasing Aang, Katara, and Sokka.">
+              </div>
             </div>
             <div class="child">
-              <h4>Arcane</h4>
-              <img src="./assets/tv-shows/arcane.jpg" alt="Vi squaring up with her Atlas Gauntlets from Arcane">
+              <div class="grid-item-container">
+                <h4>Arcane</h4>
+                <img src="./assets/tv-shows/arcane.jpg" alt="Vi squaring up with her Atlas Gauntlets from Arcane">
+              </div>
             </div>
             <div class="child">
-              <h4>Breaking Bad</h4>
-              <img src="./assets/tv-shows/break-bad.jpg" height=350 alt="Walter White and Jesse Pinkman in lawn chairs turning around facing the camera with meth on the ground.">
+              <div class="grid-item-container">
+                <h4>Breaking Bad</h4>
+                <img src="./assets/tv-shows/break-bad.jpg" height=300 alt="Walter White and Jesse Pinkman in lawn chairs turning around facing the camera with meth on the ground.">
+              </div>
             </div>
             <div class="child">
-              <h4>The Twilight Zone (1959)</h4>
-              <img src="./assets/tv-shows/twilight-zone.jpg" height=350 alt="Cover image of The Twilight Zone showcasing Rod Sterling">
+              <div class="grid-item-container">
+                <h4>The Twilight Zone (1959)</h4>
+                <img src="./assets/tv-shows/twilight-zone.jpeg" height=300 alt="Cover image of The Twilight Zone showcasing Rod Sterling">
+              </div>
             </div>
           </div>
         </section>
@@ -140,20 +173,28 @@
           <h2>Video Games</h2>
           <div class="parent-2col">
             <div class="child">
-              <h4>Elden Ring</h4>
-              <img src="./assets/video-games/elden-ring.jpg" alt="Cover image of Elden Ring">
+              <div class="grid-item-container">
+                <h4>Elden Ring</h4>
+                <img src="./assets/video-games/elden-ring.jpg" alt="Cover image of Elden Ring">
+              </div>
             </div>
             <div class="child">
-              <h4>The Last of Us</h4>
-              <img src="./assets/video-games/last-of-us.jpg" alt="Image of Ellie from The Last of Us walking through an abandoned building into a run down city">
+              <div class="grid-item-container">
+                <h4>The Last of Us</h4>
+                <img src="./assets/video-games/last-of-us.jpg" alt="Image of Ellie from The Last of Us walking through an abandoned building into a run down city">
+              </div>
             </div>
             <div class="child">
-              <h4>Sekiro: Shadows Die Twice</h4>
-              <img src="./assets/video-games/sekiro.jpg" alt="Sekiro and the Corrupted Monk standing on a bridge with their weapons drawn">
+              <div class="grid-item-container">
+                <h4>Sekiro: Shadows Die Twice</h4>
+                <img src="./assets/video-games/sekiro.jpg" alt="Sekiro and the Corrupted Monk standing on a bridge with their weapons drawn">
+              </div>
             </div>
             <div class="child">
-              <h4>Detroit: Become Human</h4>
-              <img src="./assets/video-games/detroit-become-human.jpg" alt="Cover image of Detriot: Become Human showcasing Connor">
+              <div class="grid-item-container">
+                <h4>Detroit: Become Human</h4>
+                <img src="./assets/video-games/detroit-become-human.jpg" alt="Cover image of Detriot: Become Human showcasing Connor">
+              </div>
             </div>
           </div>
           </section>
@@ -162,20 +203,28 @@
           <h2>Anime</h2>
           <div class="parent-2col">
             <div class="child">
-              <h4>Frieren: Beyond Journey's End</h4>
-              <img src="./assets/anime/frieren.jpg" alt="Cover image of Frieren: Beyound Journey's End showcasing Frieren, Fern, and Stark">
+              <div class="grid-item-container">
+                <h4>Frieren: Beyond Journey's End</h4>
+                <img src="./assets/anime/frieren.jpg" alt="Cover image of Frieren: Beyound Journey's End showcasing Frieren, Fern, and Stark">
+              </div>
             </div>
             <div class="child">
-              <h4>Gintama</h4>
-              <img src="./assets/anime/gintama.jpg" alt="Gintoki, Shinpachi, Kagura, Otae, Hijikata, Okita, Katsura, Kyuubei, Kondo, Sarutobi, and Hasegawa looking at the camera doing peace signs with their hands.">
+              <div class="grid-item-container">
+                <h4>Gintama</h4>
+                <img src="./assets/anime/gintama.jpg" alt="Gintoki, Shinpachi, Kagura, Otae, Hijikata, Okita, Katsura, Kyuubei, Kondo, Sarutobi, and Hasegawa looking at the camera doing peace signs with their hands.">
+              </div>
             </div>
             <div class="child">
-              <h4>Vinland Saga</h4>
-              <img src="./assets/anime/vinland-saga.jpg" height=375 alt="Drawings from the Vinland Saga manga showcasing Thorfinn, Askeladd, Canute, and Thors">
+              <div class="grid-item-container">
+                <h4>Vinland Saga</h4>
+                <img src="./assets/anime/vinland-saga.jpg" height=375 alt="Drawings from the Vinland Saga manga showcasing Thorfinn, Askeladd, Canute, and Thors">
+              </div>
             </div>
             <div class="child">
-              <h4>One Punch Man</h4>
-              <img src="./assets/anime/one-punch-man.jpg" height=375 alt="Cover image of One Punch Man focusing on Saitama with several of the S-class heroes in the background.">
+              <div class="grid-item-container">
+                <h4>One Punch Man</h4>
+                <img src="./assets/anime/one-punch-man.jpg" height=375 alt="Cover image of One Punch Man focusing on Saitama with several of the S-class heroes in the background.">
+              </div>
             </div>
           </div>
         </section>
