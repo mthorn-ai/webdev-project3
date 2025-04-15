@@ -1,37 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>Google Maps</title>
-    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1u7ywulcY_txqwdPiWFDeBjuZZCCcuo4&callback=console.debug&libraries=maps,marker&v=beta">
-    </script>
     <link rel="stylesheet" href="css/styles.css"/>
-    <!--Barriecito-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap" rel="stylesheet">
     <script src="js/changeBackground.js"></script>
-  </head>
-  </head>
-  <body id="background">
+</head>
+<body id="background">
     <nav id="main-nav">
-      <ul>
-        <li><a href="index.html">Homepage</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="about-me.html">Things I like</a></li>
-        <li><a href="maps.html">Map</a></li>
-      </ul>
+        <ul>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="about-me.html">Things I like</a></li>
+            <li><a href="maps.html">Map</a></li>
+        </ul>
     </nav>
     <button id="btn" onclick="changeBackground()">Change Background</button>
-    
     <h3 id="map-title">Places I want to visit in Chicago</h3>
     <div id="wrapper">
-      <div id="canvas">
-        <gmp-map center="41.87895202636719,-87.63601684570312" zoom="12" map-id="DEMO_MAP_ID">
-          <gmp-advanced-marker position="41.87895202636719,-87.63601684570312" title="Sears Tower"></gmp-advanced-marker>
-          <gmp-advanced-marker position="41.86640167236328,-87.6067123413086" title="Adler Planetarium"></gmp-advanced-marker>
-          <gmp-advanced-marker position="41.86632537841797,-87.61701965332031" title="Field Museum"></gmp-advanced-marker>
-        </gmp-map>
-      </div>
+      <div id="map"></div>
     </div>
-  </body>
+    <script src="js/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1u7ywulcY_txqwdPiWFDeBjuZZCCcuo4&callback=initMap&libraries=maps,marker&v=beta" async defer>
+    </script>
+</body>
 </html>
