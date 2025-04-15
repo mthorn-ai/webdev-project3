@@ -89,19 +89,6 @@ h4 {
   padding: 10px;
 }
 
-@media screen and (max-width: 700px){
-  #resume-container {
-    flex-direction: column;
-  }
-  #left-container {
-    margin-bottom: 3rem;
-    width: 90%;
-  }
-  #right-container {
-    width: 90%;
-  }
-}
-
 #right-container {
   background-color:lavender;
   border-radius: 20px;
@@ -260,6 +247,32 @@ h4 {
   font-size: larger;
   margin-left: 2%;
   margin-right: 2%;
+}
+
+@media screen and (min-width: 600px){
+  #gif-container {
+    display:contents;
+  }
+  .gif-align {
+    padding: 0;
+    left: 0;
+    float: left;
+    min-width: 200;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 1000px){
+  #gif-container {
+    display: flex;
+  }
+  .gif-align {
+    padding: 5rem;
+    left: auto;
+    float: none;
+    min-width: 200;
+    margin-bottom: 2rem;
+  }
 }
 
 /* for maps.html */
